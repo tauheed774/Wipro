@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soumya Ranjan Upadhyaya - Portfolio</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    header {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 200px;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 50%;
+      animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(20px); }
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      object-fit: cover;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+    header img:hover {
+      transform: scale(1.1);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    section h2 {
+      background: #764ba2;
+      color: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    .contact-info p {
+      margin: 5px 0;
+      font-size: 1rem;
+    }
+    .education ul, .projects ul, .certifications ul, .extracurricular ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .education li, .projects li, .certifications li, .extracurricular li {
+      margin-bottom: 20px;
+      padding: 20px;
+      border-left: 4px solid #764ba2;
+      background: #f9f9f9;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+    .education li:hover, .projects li:hover, .certifications li:hover, .extracurricular li:hover {
+      transform: translateX(10px);
+    }
+    .education li h3, .projects li h3 {
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+      color: #764ba2;
+    }
+    .skills ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .skills ul li {
+      background: #764ba2;
+      color: #fff;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+    .skills ul li:hover {
+      background: #667eea;
+    }
+    footer {
+      background: #764ba2;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    footer p {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Replace "myphoto.jpg" with your actual image file -->
+    <img src="Screenshot 2025-04-03 143311.png.jpg" alt="Soumya Ranjan Upadhyaya">
+    <h1>Soumya Ranjan Upadhyaya</h1>
+    <p>Bhubaneshwar, Odisha | +91-9178030456</p>
+    <p>
+      <a href="mailto:2003soumya.ranjan@gmail.com" style="color:#fff;">
+        <i class="fa fa-envelope"></i> 2003soumya.ranjan@gmail.com
+      </a>
+    </p>
+    <p>
+      <a href="https://www.linkedin.com/in/soumya-ranjan-upadhyaya856124202" target="_blank" style="color:#fff;">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </p>
+  </header>
+  
+  <div class="container">
+    <!-- Summary Section -->
+    <section id="summary">
+      <h2>Summary</h2>
+      <p>
+        Proactive and ambitious final-year Computer Science and Engineering student with strong academic performance and practical experience through projects. Skilled in applying engineering principles to real-world challenges. Known for teamwork, adaptability, and a passion for innovation, eager to contribute to dynamic organizations in technology and innovation.
+      </p>
+    </section>
+    
+    <!-- Education Section -->
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="education">
+        <li>
+          <h3>Siksha ’O’ Anusandhan University (ITER)</h3>
+          <p>Bachelor of Technology in Computer Science Engineering (CGPA: 7.7)</p>
+          <p>Bhubaneshwar, India | Continuing</p>
+        </li>
+        <li>
+          <h3>SBD International School, Bhadrak, Odisha</h3>
+          <p>Senior Secondary Education (Secured 90.66%)</p>
+          <p>2021</p>
+        </li>
+        <li>
+          <h3>St Xavier’s High School, Bhadrak, Odisha</h3>
+          <p>Secondary Education (Secured 92.4%)</p>
+          <p>2019</p>
+        </li>
+      </ul>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <ul>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>VS Code</li>
+          <li>IntelliJ IDEA</li>
+          <li>Cisco Packet Tracer</li>
+          <li>MySQL Workbench</li>
+          <li>MySQL</li>
+          <li>Computer Networking</li>
+          <li>OOPS Concepts</li>
+          <li>Data Structures & Algorithms</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="projects">
+        <li>
+          <h3>Project Management Dashboard UI</h3>
+          <p>
+            Developed using HTML and CSS, this dashboard displays summaries of ongoing projects with status, deadlines, and progress indicators. Implemented charts, graphs, and task management features.
+          </p>
+        </li>
+        <li>
+          <h3>E-Library Management System UI</h3>
+          <p>
+            Designed an intuitive user interface for managing digital library resources efficiently. Implemented search functionality for books, authors, and genres with real-time filtering.
+          </p>
+        </li>
+      </ul>
+    </section>
+    
+    <!-- Certifications Section -->
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul class="certifications">
+        <li>Micro Certification - ServiceNow</li>
+        <li>Python and SQL – Techbuzz Solutions</li>
+      </ul>
+    </section>
+    
+    <!-- Extracurricular Section -->
+    <section id="extracurricular">
+      <h2>Extracurricular</h2>
+      <ul class="extracurricular">
+        <li>
+          <strong>Kabaddi Player</strong> - Represented the SOA Kabaddi team in inter-college competitions, showcasing teamwork, strategy, and sportsmanship.
+        </li>
+        <li>
+          <strong>SOA Sports Society</strong> - Participated in events including IIT BHU “SPARDHA”, contributing to team success as part of Team CSE (2022, 2024).
+        </li>
+      </ul>
+    </section>
+  </div>
+  
+  <footer>
+    <p>&copy; 2024 Soumya Ranjan Upadhyaya. All rights reserved.</p>
+  </footer>
+</body>
+</html>
