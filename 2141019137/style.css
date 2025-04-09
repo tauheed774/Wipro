@@ -1,0 +1,88 @@
+/* Reset and base styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container */
+.container {
+  width: 80%;
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Profile picture */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 1rem;
+  border: 2px solid #0073b1;
+}
+
+/* Name and contact info */
+header h1 {
+  margin: 0.5rem 0;
+  color: #2c3e50;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+header a {
+  color: #0073b1;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Section styling */
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+/* Lists and bullets */
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.6;
+  margin-bottom: 0.6rem;
+}
