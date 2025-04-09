@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mihir Kumar - Portfolio</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #d12b31, #dfafa2, #fad0c4, #a2787d);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            color: var(--text-color);
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+            overflow-x: hidden;
+        }
+
+        /* Light and Dark Mode */
+        :root {
+            --bg-color: rgba(255, 255, 255, 0.2);
+            --text-color: #333;
+            --glass-border: rgba(255, 255, 255, 0.3);
+        }
+        [data-theme="dark"] {
+            --bg-color: rgba(0, 0, 0, 0.4);
+            --text-color: #ffffff;
+            --glass-border: rgba(255, 255, 255, 0.1);
+            background: linear-gradient(135deg, #141E30, #243B55);
+        }
+
+        /* Glass Effect */
+        .container {
+            width: 50%;
+            margin: auto;
+            background: var(--bg-color);
+            padding: 20px;
+            margin-top: 50px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards;
+        }
+
+        /* Profile Picture */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid var(--text-color);
+            transition: transform 0.3s ease-in-out;
+        }
+        .profile-pic:hover {
+            transform: scale(1.1);
+        }
+
+        /* Button Styling */
+        .btn {
+            padding: 12px 25px;
+            margin-top: 20px;
+            border: none;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            cursor: pointer;
+            border-radius: 30px;
+            font-size: 16px;
+            transition: transform 0.2s ease-in-out, background 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            background: linear-gradient(135deg, #0056b3, #007bff);
+        }
+        .btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Toggle Dark Mode Button */
+        .toggle-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            background: #333;
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        [data-theme="dark"] .toggle-btn {
+            background: #fff;
+            color: #333;
+        }
+
+        /* Hidden Section */
+        .hidden-section {
+            display: none;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+
+        /* Show Details Animation */
+        .show {
+            display: block !important;
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* List Styling */
+        .info p {
+            font-size: 18px;
+            padding: 5px 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            margin: 5px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <button class="toggle-btn" onclick="toggleTheme()">Toggle Dark Mode</button>
+
+    <div class="container">
+        <img src="https://github.com/mihir841/Portfolio/blob/main/image/1000086185-01.jpeg?raw=true" alt="Mihir Kumar" class="profile-pic">
+        <h1>Mihir Kumar <br><span class="email">mihirawesome09@gmail.com</span></h1>
+        <button class="btn" onclick="toggleDetails()">Know More</button>
+
+        <div id="details" class="hidden-section">
+            <h2>Academic Details</h2>
+            <div class="info">
+                <p><strong>CGPA:</strong> 8.32</p>
+                <p><strong>1st Semester SGPA:</strong> 8.32</p>
+                <p><strong>2nd Semester SGPA:</strong> 8.18</p>
+                <p><strong>3rd Semester SGPA:</strong> 9.13</p>
+                <p><strong>4th Semester SGPA:</strong> 8.08</p>
+                <p><strong>5th Semester SGPA:</strong> 7.6</p>
+                <p><strong>6th Semester SGPA:</strong> 8.1</p>
+                <p><strong>7th Semester SGPA:</strong> 8.77</p>
+            </div>
+            <h2>School Education</h2>
+            <div class="info">
+                <p><strong>School:</strong> Kendriya Vidyalaya No. 1, Cuttack</p>
+                <p><strong>10th Percentage:</strong> 85%</p>
+                <p><strong>12th Percentage:</strong> 82%</p>
+            </div>
+            <h2>Certifications</h2>
+            <div class="info">
+                <p>Certified in DevOps Internals</p>
+            </div>
+            <h2>Skills</h2>
+            <div class="info">
+                <p>Java</p>
+                <p>DevOps</p>
+                <p>Python</p>
+                <p>MySQL</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            let theme = document.body.getAttribute('data-theme');
+            if (theme === 'dark') {
+                document.body.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.body.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        (function() {
+            let savedTheme = localStorage.getItem('theme') || 'light';
+            document.body.setAttribute('data-theme', savedTheme);
+        })();
+
+        function toggleDetails() {
+            let details = document.getElementById('details');
+            details.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
