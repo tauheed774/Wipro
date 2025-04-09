@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio - Chiranjeeb Behera</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #121212;
+            color: white;
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .navbar a:hover, .navbar a.active {
+            color: #ffdd57;
+        }
+
+        /* Welcome section */
+        .welcome {
+            height: 100vh;
+            background: linear-gradient(to right, #2c3e50, #3498db);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .welcome h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        .welcome p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #ff4757;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #e84118;
+            transform: scale(1.1);
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #ffdd57;
+        }
+
+        /* Sections */
+        .section {
+            max-width: 1000px;
+            margin: 100px auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#welcome">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+    </div>
+
+    <!-- Welcome Section -->
+    <div class="welcome" id="welcome">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I am <strong>Chiranjeeb Behera</strong>. Explore my work and experiences.</p>
+        <a href="#about" class="btn">View My Profile</a>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/chiranjeebbehera" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/chiranjeebbehera" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:chiranjeeb966@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="section" id="about">
+        <img src="mp.jpeg" alt="Chiranjeeb Behera">
+        <h2>About Me</h2>
+        <p>Bhoisahi, Matiganj, Balasore, Odisha, 756001</p>
+        <p>Email: chiranjeeb966@gmail.com | Phone: 8260961924</p>
+    </div>
+
+    <!-- Education Section -->
+    <div class="section" id="education">
+        <h2>Education</h2>
+        <div class="grid">
+            <div class="card">B.Tech in CSE - Sikhsa 'O' Anusandhan University (CGPA: 6.78)</div>
+            <div class="card">12th Grade - D.A.V. Public School (73%)</div>
+            <div class="card">10th Grade - Modern Public School (77%)</div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section" id="skills">
+        <h2>Skills</h2>
+        <div class="grid">
+            <div class="card">Java</div>
+            <div class="card">Python</div>
+            <div class="card">HTML & CSS</div>
+            <div class="card">JavaScript</div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="section" id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="card"><strong>Web Development</strong> - Frontend Developer (<a href="https://drive.google.com/drive/folders/1w8OUnU9h-Qr52orQCMg4ZNoaTekKBo_0?usp=drive_link" target="_blank">Project Link</a>)</div>
+            <div class="card"><strong>CRUD Website</strong> - Built using Python</div>
+        </div>
+    </div>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('.section').forEach(section => {
+                let observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('show');
+                        }
+                    });
+                }, { threshold: 0.2 });
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
