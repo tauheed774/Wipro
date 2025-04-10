@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashutosh Das - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif; /* Another classic, formal serif font */
+            margin: 0;
+            background-color: #f8f8f8; /* Very light grey */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .portfolio-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+            padding: 70px; /* Increased padding */
+            width: 85%;
+            max-width: 1200px;
+            margin: 60px 0;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .profile-image {
+            width: 180px; /* Slightly larger */
+            height: 180px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 50px;
+            border: 8px solid #f0f0f0;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-info {
+            flex-grow: 1;
+        }
+
+        .name {
+            font-size: 3.8em; /* More prominent */
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #2d3e50; /* Darker, professional blue */
+        }
+
+        .details-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .details-list li {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .highlight {
+            background-color: #e9f5ff; /* Light blue */
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-weight: bold;
+            color: #007bff; /* Primary blue */
+            border: 1px solid #d0e3ff;
+        }
+
+        .section {
+            margin-bottom: 60px; /* More spacing */
+            padding: 40px;
+            border-radius: 10px;
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+        }
+
+        .section-title {
+            font-size: 2.8em; /* Larger titles */
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #2d3e50;
+            border-bottom: 3px solid #2d3e50; /* Darker blue border */
+            padding-bottom: 15px;
+            display: inline-block;
+        }
+
+        .section-content {
+            line-height: 1.9;
+            font-size: 1.2em;
+            color: #444;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .skill-item {
+            background-color: #f0f8ff; /* Light blue */
+            color: #1e8449; /* Forest green */
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-align: center;
+            font-size: 1.1em;
+            border: 1px solid #b8e3b1;
+        }
+
+        .education-list, .projects-list, .certifications-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .education-item, .project-item, .certification-item {
+            margin-bottom: 30px;
+            padding: 30px;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+        }
+
+        .education-item h4, .project-item h4, .certification-item h4 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2d3e50;
+        }
+
+        .project-item ul {
+            padding-left: 35px;
+            list-style-type: disc;
+            margin-top: 15px;
+        }
+
+        .contact-info p {
+            margin-bottom: 20px;
+            font-size: 1.25em;
+        }
+
+        .contact-info a {
+            color: #007bff; /* Primary blue links */
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* More formal serif font with good readability */
+        @import url('https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&display=swap');
+    </style>
+</head>
+<body>
+    <div class="portfolio-container">
+        <div class="profile-header">
+            <div class="profile-image">
+                <img src="AshutoshDas.jpg" alt="Ashutosh Das" width="180" height="180">
+            </div>
+            <div class="profile-info">
+                <h1 class="name">Ashutosh Das</h1>
+                <ul class="details-list">
+                    <li>Registration Number: 2141004162</li>
+                    <li>Branch: Electronics and Communication Engineering</li>
+                    <li>CGPA: <span class="highlight">7.40</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Career Objective</h2>
+            <div class="section-content">
+                <p>A highly motivated and consistent final-year student in Electronics and Communication Engineering, possessing a strong aptitude for innovative thinking and effective problem resolution. Adept at the analysis, design, and implementation of sophisticated electronic systems. Demonstrates a refined ability to evaluate complex challenges and develop creative, well-reasoned solutions through critical and analytical skills. A proactive and collaborative team member with excellent communication proficiencies, consistently contributing to the success of group endeavors. Seeking a challenging and enriching professional opportunity to leverage and further enhance these capabilities within a dynamic and forward-thinking organization.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <ul class="education-list">
+                <li class="education-item">
+                    <h4>Siksha ’O’ Anusandhan University (ITER)</h4>
+                    <p>Bachelor of Technology in Electronics & Communication Engineering (Cumulative Grade Point Average: <span class="highlight">7.40</span>)</p>
+                    <p>Bhubaneswar, Odisha, India (Expected Completion: May 2025)</p>
+                </li>
+                <li class="education-item">
+                    <h4>M.G.M English Medium School</h4>
+                    <p>Senior Secondary Education (Secured 78.5%)</p>
+                    <p>Rourkela, Odisha, India (2021)</p>
+                </li>
+                <li class="education-item">
+                    <h4>M.G.M English Medium School</h4>
+                    <p>Secondary Education (Secured 80.5%)</p>
+                    <p>Rourkela, Odisha, India (2019)</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Projects</h2>
+            <ul class="projects-list">
+                <li class="project-item">
+                    <h4>Bank Management Web Application</h4>
+                    <ul>
+                        <li>Developed a secure and efficient Bank Management Web Application utilizing the Spring framework and SQL database management system.</li>
+                        <li>Engineered the system to streamline essential banking functionalities, including secure user account registration, comprehensive transaction processing, and robust customer data management protocols.</li>
+                        <li>Implemented advanced password encryption techniques employing Spring Security's BCryptPasswordEncoder to ensure the utmost confidentiality of sensitive user credentials.</li>
+                    </ul>
+                </li>
+                <li class="project-item">
+                    <h4>Design and Implementation of a Secure Local Area Network (LAN) for a Small Business</h4>
+                    <p><span style="font-style: italic; color: #555;">Ernst & Young Global Delivery Services (EY GDS)</span></p>
+                    <ul>
+                        <li>Architected and implemented a resilient and secure Local Area Network (LAN) infrastructure for a small business environment, employing Cisco Packet Tracer for detailed network simulation and design.</li>
+                        <li>Applied critical security measures, encompassing network segmentation through Virtual Local Area Networks (VLANs), the configuration of stringent firewall access policies, and the implementation of access control lists to effectively restrict unauthorized network access.</li>
+                        <li>Optimized the network's operational efficiency and security posture by integrating secure routing protocols, thereby enhancing the confidentiality, integrity, and availability of vital network resources.</li>
+                    </ul>
+                </li>
+                <li class="project-item">
+                    <h4>Development of a Convolutional Neural Network (CNN) Model for Object Detection and Recognition</h4>
+                    <p><span style="font-style: italic; color: #555;">Larsen & Toubro (L&T)</span></p>
+                    <ul>
+                        <li>Conceptualized, designed, and rigorously trained a sophisticated Convolutional Neural Network (CNN) model specifically for the accurate detection and recognition of objects within digital imagery.</li>
+                        <li>Achieved a high degree of accuracy and robustness in object recognition performance through the strategic application of advanced deep learning methodologies, including transfer learning techniques and comprehensive data augmentation strategies.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item">Java</div>
+                <div class="skill-item">C++</div>
+                <div class="skill-item">Data Structures and Algorithms</div>
+                <div class="skill-item">AWS</div>
+                <div class="skill-item">Spring Framework</div>
+                <div class="skill-item">CNN Model Development</div>
+                <div class="skill-item">Critical Thinking</div>
+                <div class="skill-item">Technical Communication</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Industrial Trainings / Certifications</h2>
+            <ul class="certifications-list">
+                <li class="certification-item">
+                    <h4>Cyber Physical Systems for Industrial Applications</h4>
+                    <p><span style="font-style: italic; color: #555;">L&T EduTech</span></p>
+                </li>
+                <li class="certification-item">
+                    <h4>Artificial Intelligence and Edge Computing</h4>
+                    <p><span style="font-style: italic; color: #555;">L&T EduTech</span></p>
+                </li>
+                <li class="certification-item">
+                    <h4>Cybersecurity Training</h4>
+                    <p><span style="font-style: italic; color: #555;">EY GDS</span></p>
+                </li>
+                <li class="certification-item">
+                    <h4>AWS Academy Cloud Security Foundations</h4>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:ashutoshdas0987@gmail.com">ashutoshdas0987@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/ashutoshdas1208" target="_blank">linkedin.com/in/ashutoshdas1208</a></p>
+                <p>GitHub: <a href="https://github.com/AshutoshDas0987" target="_blank">github.com/AshutoshDas0987</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
